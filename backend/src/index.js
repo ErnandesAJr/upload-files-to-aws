@@ -6,8 +6,6 @@ const mongoose = require('mongoose')
 const path = require('path')
 const cors = require('cors')
 
-
-
 const app = express();
 
 /**
@@ -28,7 +26,6 @@ app.use(
 );
 
 app.use(require("./routes"));
-
 
 app.listen(process.env.SERVER_PORT, ()=>{
     console.log('Upload Project Application running at port ' + process.env.SERVER_PORT);
